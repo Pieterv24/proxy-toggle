@@ -1,0 +1,22 @@
+{
+  "name": "proxytoggle",
+  "version": "1.0.0",
+  "description": "Firefox Extension for switching proxy settings",
+  "main": "",
+  "scripts": {
+    "build": "npm run build:rollup && npm run build:web-ext",
+    "build:rollup": "rollup --config",
+    "build:web-ext": "web-ext build --overwrite-dest --ignore-files='src' rollup.config.js package.json package-lock.json"
+  },
+  "author": "Pieterv24",
+  "license": "MIT",
+  "dependencies": {
+    "@lion/core": "^0.5.1",
+    "@lion/radio-group": "^0.8.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^2.7.2",
+    "web-ext": "^4.2.0"
+  }
+}

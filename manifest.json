@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Proxy Switch",
+    "version": "1.0",
+    "author": "Pieterv24",
+    "homepage_url": "https://github.com/Pieterv24/proxy-toggle",
+  
+    "description": "Easily toggle between proxy settings.",
+  
+    "icons": {
+        "48": "icons/icon-48.png",
+        "96": "icons/icon-96.png"
+    },
+
+    "permissions": [
+        "proxy"
+    ],
+
+    "browser_action": {
+        "default_icon": {
+            "32": "icons/icon-32.png",
+			"64": "icons/icon-64.png"
+        },
+        "default_title": "Turn on proxy",
+        "default_popup": "popup.html"
+    }  
+  }
