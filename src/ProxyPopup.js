@@ -1,8 +1,20 @@
-import { html, LitElement, browserDetection } from '@lion/core';
-import '@lion/radio-group/lion-radio-group.js';
-import '@lion/radio-group/lion-radio.js';
+import { html, LitElement, ScopedElementsMixin } from '@lion/core';
+import { LionRadio, LionRadioGroup } from '@lion/radio-group';
 
-export class ProxyPopup extends LitElement {
+import styles from './ProxyPopup.style.js';
+
+export class ProxyPopup extends ScopedElementsMixin(LitElement) {
+    static get scopedElements() {
+        return {
+            'lion-radio-group': LionRadioGroup,
+            'lion-radio': LionRadio
+        }
+    }
+
+    static get styles() {
+        return styles;
+    }
+
     constructor() {
         super();
 
@@ -66,8 +78,8 @@ export class ProxyPopup extends LitElement {
 
     renderPrivateWarning() {
         return html`
-        <p style="font-weight: bold; color: red;">For this Add-on to work. It must be allowed in private windows</p>
-        <p style="font-weight: bold; color: red;">Go to 'Add-ons', click 'Manage' on this addon and Allow 'Run in Private Windows'</p>
+            <p class="warning">For this Add-on to work. It must be allowed in private windows</p>
+            <p class="warning">Go to 'Add-ons', click 'Manage' on this addon and Allow 'Run in Private Windows'</p>
         `;
     }
 }
