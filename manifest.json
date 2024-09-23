@@ -1,7 +1,7 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Proxy Switch",
-    "version": "2.0.0",
+    "version": "3.0.0",
     "author": "Pieterv24",
     "homepage_url": "https://github.com/Pieterv24/proxy-toggle",
   
@@ -15,8 +15,8 @@
     "permissions": [
         "proxy"
     ],
-
-    "browser_action": {
+    
+    "action": {
         "default_icon": {
             "32": "icons/icon-32.png",
 			"64": "icons/icon-64.png"

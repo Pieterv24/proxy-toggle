@@ -1,6 +1,6 @@
 {
   "name": "proxytoggle",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Firefox Extension for switching proxy settings",
   "main": "",
   "scripts": {
@@ -14,17 +14,17 @@
   "author": "Pieterv24",
   "license": "MIT",
   "dependencies": {
-    "@lion/button": "^0.10.1",
-    "@lion/checkbox-group": "^0.15.2",
-    "@lion/core": "^0.15.0",
-    "@lion/form-core": "^0.10.1",
-    "@lion/input": "^0.12.2",
-    "@lion/radio-group": "^0.14.2"
+    "@lion/button": "^0.18.1",
+    "@lion/checkbox-group": "^0.21.1",
+    "@lion/core": "^0.24.0",
+    "@lion/form-core": "^0.18.3",
+    "@lion/input": "^0.18.0",
+    "@lion/radio-group": "^0.21.1"
   },
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^11.2.1",
-    "concurrently": "^6.0.0",
-    "rollup": "^2.44.0",
-    "web-ext": "^6.0.0"
+    "@rollup/plugin-node-resolve": "^15.2.4",
+    "concurrently": "^9.0.1",
+    "rollup": "^4.22.4",
+    "web-ext": "^8.3.0"
   }
 }

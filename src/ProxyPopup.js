@@ -12,25 +12,19 @@ const proxyPattern = new Pattern(/(?:(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)
 });
 
 export class ProxyPopup extends ScopedElementsMixin(LitElement) {
-    static get scopedElements() {
-        return {
-            'lion-radio-group': LionRadioGroup,
-            'lion-radio': LionRadio,
-            'lion-input': LionInput,
-            'lion-checkbox': LionCheckbox,
-            'lion-button': LionButton
-        }
+    static scopedElements = {
+        'lion-radio-group': LionRadioGroup,
+        'lion-radio': LionRadio,
+        'lion-input': LionInput,
+        'lion-checkbox': LionCheckbox,
+        'lion-button': LionButton
     }
 
-    static get styles() {
-        return styles;
-    }
+    static styles = styles;
 
-    static get properties() {
-        return {
-            httpProxyAll: { type: Boolean },
-            error: { type: String}
-        }
+    static properties = {
+        httpProxyAll: { type: Boolean },
+        error: { type: String}
     }
 
     constructor() {
